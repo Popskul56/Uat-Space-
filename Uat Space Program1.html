@@ -20,5 +20,95 @@
 
     <!-- This is a button. There is a JvaScript alert tha show when the button is clicked-->
     <input type="button" Value="Click Me" onclick="alert('You clicked me');"/>
+
+    <!-- This will show the current countdown number -->
+    <p>
+        Countdown: <span id="countdown"></span>
+    </p>
+
+    <script>
+        //this is a single line comment
+        /*this is a multiline comment */
+
+        //traks the current countdown time
+        var currTime = 50;
+
+        //tracks the current timeout
+        var timeout = 0;
+
+        //this value will not change and creates the 5 seond delay
+        var timeoutIncrement = 5000;
+        
+        // this is a short hand to piont to the 
+        var countdownElem = document.getElementById("countdown")
+
+        //begin of the countdown
+        setTimeout(function(){
+            countdownElem.innerHTML = currTime;
+            currTime = currTime - 5;
+        }, timeout);
+        timeout = timeout + timeoutIncrement;
+
+        setTimeout(function(){
+            countdownElem.innerHTML = currTime;
+            currTime = currTime - 5;
+        }, timeout);
+        timeout = timeout + timeoutIncrement;
+
+        setTimeout(function(){
+            countdownElem.innerHTML = currTime;
+            currTime = currTime - 5;
+        }, timeout);
+        timeout = timeout + timeoutIncrement;
+
+        setTimeout(function(){
+            countdownElem.innerHTML = currTime;
+            currTime = currTime - 5;
+        }, timeout);
+        timeout = timeout + timeoutIncrement;
+
+        setTimeout(function(){
+            countdownElem.innerHTML = currTime;
+            currTime = currTime - 5;
+        }, timeout);
+        timeout = timeout + timeoutIncrement;
+
+        setTimeout(function(){
+            countdownElem.innerHTML = currTime;
+            currTime = currTime - 5;
+        }, timeout);
+        timeout = timeout + timeoutIncrement;
+
+        setTimeout(function(){
+            countdownElem.innerHTML = currTime;
+            currTime = currTime - 5;
+        }, timeout);
+        timeout = timeout + timeoutIncrement;
+
+        setTimeout(function(){
+            countdownElem.innerHTML = currTime;
+            currTime = currTime - 5;
+        }, timeout);
+        timeout = timeout + timeoutIncrement;
+
+        setTimeout(function(){
+            countdownElem.innerHTML = currTime;
+            currTime = currTime - 5;
+        }, timeout);
+        timeout = timeout + timeoutIncrement;
+
+        setTimeout(function(){
+            countdownElem.innerHTML = currTime;
+            currTime = currTime - 5;
+        }, timeout);
+        timeout = timeout + timeoutIncrement;
+
+        //This is last time we need to call setTimeout, currTime is now 0
+        setTimeout(function(){
+            alert("Takeoff!");
+            countdownElem.innerHTML = "Launch successful!";
+        }, timeout);
+        
+    </script>
 </body>
 </html>
