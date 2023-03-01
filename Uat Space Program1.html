@@ -22,6 +22,10 @@
     <!-- This is a button. There is a JvaScript alert tha show when the button is clicked-->
     <input type="button" Value="Click Me" onclick="alert('You clicked me');"/>
 
+    <p>
+        Welcome, <span id="userNameBadge"></span>
+    </p>
+
     <!-- This will show the current countdown number -->
     <p>
         Countdown: <span id="countdown"></span>
@@ -30,6 +34,9 @@
     <script>
         //this is a single line comment
         /*this is a multiline comment */
+
+        var userInfo = getUserInput();
+        document.getElementById("userNameBadge").innerHTML = userInfo;
 
         // this is a short hand to piont to the 
         var countdownElem = document.getElementById("countdown");
