@@ -67,7 +67,7 @@ function runTimer( countdownElem){
                 alert("Takeoff!");
                 countdownElem.innerHTML = "Launch successful!";
             }
-            else if (curTime < 25){
+            else if (currTime < 25){
                 countdownElem.innerHTML = "Warning Less than 1/2 way to launch, time left = " + currTime;
             }
             else{
