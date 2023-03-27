@@ -1,3 +1,16 @@
+function playSound(soundSrc){
+    var sound = document.createElement("audio");
+    sound.src = soundSrc;
+    sound.setAttribute("controls" , "auto" );
+    document.body.appendChild(sound);
+    play = function(){
+        sound.play();
+    }
+    stop = function(){
+        sound.pause();
+    }
+}
+
 //arr is for array
 var arrInterval = new Array()
 
